@@ -1,6 +1,7 @@
 using SwinGameSDK;
 /// <summary>
 /// Game logic is main program of the game
+/// might not needed
 /// </summary>
 static class GameLogic
 {
