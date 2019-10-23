@@ -1,10 +1,3 @@
-
-using Microsoft.VisualBasic;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-//using System.Data;
-using System.Diagnostics;
 using SwinGameSDK;
 
 /// <summary>
@@ -21,7 +14,7 @@ static class EndingGameController
 	public static void DrawEndOfGame()
 	{
 		UtilityFunctions.DrawField(GameController.ComputerPlayer.PlayerGrid, GameController.ComputerPlayer, true);
-		UtilityFunctions.DrawSmallField(GameController.HumanPlayer.PlayerGrid, GameController.HumanPlayer);
+        UtilityFunctions.DrawSmallField(GameController.HumanPlayer.PlayerGrid, GameController.HumanPlayer);
 
 		if (GameController.HumanPlayer.IsDestroyed) {
 			SwinGame.DrawTextLines("YOU LOSE!", Color.White, Color.Transparent, GameResources.GameFont("ArialLarge"), FontAlignment.AlignCenter, 0, 250, SwinGame.ScreenWidth(), SwinGame.ScreenHeight());
