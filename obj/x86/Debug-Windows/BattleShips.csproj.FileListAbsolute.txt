@@ -57,3 +57,5 @@ C:\Users\Mako\Documents\Swinburne\Degree\Sem 3\Developement Project 1 Tools and 
 C:\Users\Mako\Documents\Swinburne\Degree\Sem 3\Developement Project 1 Tools and Practices\Project\BattleShips\obj\x86\Debug-Windows\BattleShips.csproj.CopyComplete
 C:\Users\Mako\Documents\Swinburne\Degree\Sem 3\Developement Project 1 Tools and Practices\Project\BattleShips\obj\x86\Debug-Windows\BattleShips.exe
 C:\Users\Mako\Documents\Swinburne\Degree\Sem 3\Developement Project 1 Tools and Practices\Project\BattleShips\obj\x86\Debug-Windows\BattleShips.csprojAssemblyReference.cache
+D:\Swinburne\Degree\Sem 3\Developement Project 1 Tools and Practices\Project\BattleShips\obj\x86\Debug-Windows\BattleShips.csprojAssemblyReference.cache
+D:\Swinburne\Degree\Sem 3\Developement Project 1 Tools and Practices\Project\BattleShips\obj\x86\Debug-Windows\BattleShips.exe
