@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using SwinGameSDK;
+
 /// <summary>
 /// Game resource file are loaded from this class
 /// </summary>
