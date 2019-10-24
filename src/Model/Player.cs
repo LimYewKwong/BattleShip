@@ -1,10 +1,6 @@
-
-using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-// using System.Data;
-using System.Diagnostics;
 /// <summary>
 /// Player has its own _PlayerGrid, and can see an _EnemyGrid, it can also check if
 /// all ships are deployed and if all ships are detroyed. A Player can also attach.
@@ -43,7 +39,7 @@ public class Player : IEnumerable<Ship>
 	public Player(BattleShipsGame controller)
 	{
 		_game = controller;
-    _playerGrid = new SeaGrid(_Ships);
+    	_playerGrid = new SeaGrid(_Ships);
 
 		//for each ship add the ships name so the seagrid knows about them
 		foreach (ShipName name in Enum.GetValues(typeof(ShipName))) {

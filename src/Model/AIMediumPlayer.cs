@@ -1,10 +1,5 @@
-
-using Microsoft.VisualBasic;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-// using System.Data;
-using System.Diagnostics;
 
 /// <summary>
 /// The AIMediumPlayer is a type of AIPlayer where it will try and destroy a ship

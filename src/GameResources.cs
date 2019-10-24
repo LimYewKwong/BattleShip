@@ -138,7 +138,7 @@ public static class GameResources
 		width = SwinGame.ScreenWidth();
 		height = SwinGame.ScreenHeight();
 
-		SwinGame.ChangeScreenSize(800, 600);
+		SwinGame.ChangeScreenSize(1600, 900);
 
 		ShowLoadingScreen();
 

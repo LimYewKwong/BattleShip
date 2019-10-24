@@ -8,7 +8,7 @@ static class GameLogic
 	public static void Main()
 	{
         //Opens a new Graphics Window,
-        SwinGame.OpenGraphicsWindow("Battle Ships",800,600);
+        SwinGame.OpenGraphicsWindow("Battle Ships",1600,900);
 
 		//Load Resources
 		GameResources.LoadResources();
