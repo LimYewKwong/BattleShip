@@ -4,13 +4,18 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\GameController.cs">
-    <Files>
-      <File FileName="src\Model\AIPlayer.cs" Line="65" Column="68" />
-      <File FileName="src\Model\AIHardPlayer.cs" Line="209" Column="1" />
-      <File FileName="src\Model\AIMediumPlayer.cs" Line="1" Column="1" />
-      <File FileName="src\GameController.cs" Line="12" Column="2" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BattleShips" expanded="True">
+            <Node name="BattleShips" expanded="True">
+              <Node name="Packages" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.BattleShips PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
