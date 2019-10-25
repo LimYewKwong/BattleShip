@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\NUnit.3.12.0\build\NUnit.props" Condition="Exists('packages\NUnit.3.12.0\build\NUnit.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug-Windows</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -13,7 +14,6 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseMSBuildEngine>False</UseMSBuildEngine>
     <TargetFrameworkProfile />
-    <ApplicationManifest>AIEasyPlayer.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug-Windows|x86' ">
     <DebugType>none</DebugType>
@@ -74,33 +74,8 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />
   <ItemGroup>
+    <Compile Include="src\**\*.cs" />
     <Compile Include="src\Model\AIEasyPlayer.cs" />
-    <Compile Include="src\Model\AIHardPlayer.cs" />
-    <Compile Include="src\Model\AIMediumPlayer.cs" />
-    <Compile Include="src\Model\AIOption.cs" />
-    <Compile Include="src\Model\AIPlayer.cs" />
-    <Compile Include="src\Model\AttackResult.cs" />
-    <Compile Include="src\Model\BattleShipsGame.cs" />
-    <Compile Include="src\Model\Direction.cs" />
-    <Compile Include="src\Model\ISeaGrid.cs" />
-    <Compile Include="src\Model\Player.cs" />
-    <Compile Include="src\Model\ResultOfAttack.cs" />
-    <Compile Include="src\Model\SeaGrid.cs" />
-    <Compile Include="src\Model\SeaGridAdapter.cs" />
-    <Compile Include="src\Model\Ship.cs" />
-    <Compile Include="src\Model\ShipName.cs" />
-    <Compile Include="src\Model\Tile.cs" />
-    <Compile Include="src\Model\TileView.cs" />
-    <Compile Include="src\DeploymentController.cs" />
-    <Compile Include="src\DiscoveryController.cs" />
-    <Compile Include="src\EndingGameController.cs" />
-    <Compile Include="src\GameController.cs" />
-    <Compile Include="src\GameLogic.cs" />
-    <Compile Include="src\GameResources.cs" />
-    <Compile Include="src\GameState.cs" />
-    <Compile Include="src\HighScoreController.cs" />
-    <Compile Include="src\MenuController.cs" />
-    <Compile Include="src\UtilityFunctions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">
@@ -109,7 +84,8 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System" />
     <Reference Include="nunit.framework">
-      <HintPath>packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+      <HintPath>packages\NUnit.3.12.0\lib\net40\nunit.framework.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +114,7 @@
     <WinLibraryFiles Include="lib\win\smpeg.dll" />
     <WinLibraryFiles Include="lib\win\swingame.rc" />
     <WinLibraryFiles Include="lib\win\zlib1.dll" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Target Name="CopyFiles">
     <Copy SourceFiles="@(MacLibraryFiles)" DestinationFolder="$(OutDir)" />
