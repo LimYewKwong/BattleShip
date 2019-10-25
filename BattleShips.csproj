@@ -75,7 +75,6 @@
   <ItemGroup />
   <ItemGroup>
     <Compile Include="src\**\*.cs" />
-    <Compile Include="src\Model\AIEasyPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">
