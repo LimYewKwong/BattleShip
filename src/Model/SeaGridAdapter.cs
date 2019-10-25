@@ -1,13 +1,15 @@
+using Microsoft.VisualBasic;
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
 /// <summary>
 /// The SeaGridAdapter allows for the change in a sea grid view. Whenever a ship is
 /// presented it changes the view into a sea tile instead of a ship tile.
 /// </summary>
 public class SeaGridAdapter : ISeaGrid
 {
-
-
-	private SeaGrid _MyGrid;
+    private SeaGrid _MyGrid;
 	/// <summary>
 	/// Create the SeaGridAdapter, with the grid, and it will allow it to be changed
 	/// </summary>

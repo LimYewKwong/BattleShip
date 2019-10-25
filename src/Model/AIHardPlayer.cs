@@ -1,6 +1,8 @@
+using Microsoft.VisualBasic;
 using System;
+using System.Collections;
 using System.Collections.Generic;
-
+using System.Diagnostics;
 /// <summary>
 /// AIHardPlayer is a type of player. This AI will know directions of ships
 /// when it has found 2 ship tiles and will try to destroy that ship. If that ship
@@ -215,7 +217,7 @@ public class AIHardPlayer : AIPlayer
 				if ((!foundOriginal && t.ShotAt == source) || (foundOriginal & t.Source == source)) {
 					current = t;
 					_LastHit.Remove(t);
-					goto end; // TODO: might not be correct. Was : Exit For
+                    goto end; // TODO: might not be correct. Was : Exit For
 				}
 			}
             end:
