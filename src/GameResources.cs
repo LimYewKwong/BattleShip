@@ -15,7 +15,7 @@ public static class GameResources
     /// </summary>
     private static void LoadFonts()
     {
-        NewFont("ArialLarge", "arial.ttf", 80);
+        NewFont("TimesLarge", "times.ttf", 80);
         NewFont("Courier", "cour.ttf", 14);
         NewFont("CourierSmall", "cour.ttf", 8);
         NewFont("Menu", "ffaccess.ttf", 8);
@@ -180,7 +180,7 @@ public static class GameResources
         SwinGame.ProcessEvents();
 
         _Animation = SwinGame.LoadBitmap(SwinGame.PathToResource("SwinGameAni.jpg", ResourceKind.BitmapResource));
-        _LoadingFont = SwinGame.LoadFont(SwinGame.PathToResource("arial.ttf", ResourceKind.FontResource), 12);
+        _LoadingFont = SwinGame.LoadFont(SwinGame.PathToResource("times.ttf", ResourceKind.FontResource), 12);
         _StartSound = Audio.LoadSoundEffect(SwinGame.PathToResource("SwinGameStart.ogg", ResourceKind.SoundResource));
 
         _LoaderFull = SwinGame.LoadBitmap(SwinGame.PathToResource("loader_full.png", ResourceKind.BitmapResource));
