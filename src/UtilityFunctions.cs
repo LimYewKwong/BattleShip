@@ -235,7 +235,7 @@ static class UtilityFunctions
     /// </summary>
     public static void DrawMessage()
     {
-        SwinGame.DrawText(Message, MESSAGE_COLOR, GameResources.GameFont("Courier"), FIELD_LEFT, MESSAGE_TOP);
+        SwinGame.DrawText(Message, MESSAGE_COLOR, GameResources.GameFont("Geolight"), FIELD_LEFT, MESSAGE_TOP);
     }
 
     /// <summary>
@@ -264,7 +264,7 @@ static class UtilityFunctions
                 break;
         }
 
-        SwinGame.DrawFramerate(675, 585, GameResources.GameFont("CourierSmall"));
+        SwinGame.DrawFramerate(675, 585, GameResources.GameFont("GeolightSmall"));
     }
 
     public static void AddExplosion(int row, int col)
