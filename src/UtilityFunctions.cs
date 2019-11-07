@@ -247,15 +247,18 @@ static class UtilityFunctions
         switch (GameController.CurrentState)
         {
             case GameState.ViewingMainMenu:
+				SwinGame.DrawBitmap (GameResources.GameImage ("Menu"), 0, 0);
+				break;
             case GameState.ViewingGameMenu:
             case GameState.AlteringSettings:
             case GameState.ViewingHighScores:
-                SwinGame.DrawBitmap(GameResources.GameImage("Menu"), 0, 0);
+			SwinGame.FillRectangle (Color.Goldenrod, 450, 25, 200, 400);
                 break;
             case GameState.Discovering:
             case GameState.EndingGame:
                 SwinGame.DrawBitmap(GameResources.GameImage("Discovery"), 0, 0);
                 break;
+
             case GameState.Deploying:
                 SwinGame.DrawBitmap(GameResources.GameImage("Deploy"), 0, 0);
                 break;

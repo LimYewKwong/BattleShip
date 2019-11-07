@@ -145,7 +145,7 @@ static class HighScoreController
             }
             else
             {
-                SwinGame.DrawText(i + 1 + ":   " + s.Name + "   " + s.Value, Color.White, GameResources.GameFont("Geolight"), SCORES_LEFT, SCORES_TOP + i * SCORE_GAP);
+				SwinGame.DrawText(i + 1 + ":   " + s.Name + "   " + s.Value, Color.White, GameResources.GameFont("Geolight"), SCORES_LEFT, SCORES_TOP + i * SCORE_GAP);
             }
         }
     }
@@ -187,7 +187,7 @@ static class HighScoreController
             int x = 0;
             x = SCORES_LEFT + SwinGame.TextWidth(GameResources.GameFont("Geolight"), "Name: ");
 
-            SwinGame.StartReadingText(Color.White, NAME_WIDTH, GameResources.GameFont("Geolight"), x, ENTRY_TOP);
+			SwinGame.StartReadingText(Color.White, NAME_WIDTH, GameResources.GameFont("Geolight"), x, ENTRY_TOP);
 
             //Read the text from the user
             while (SwinGame.ReadingText())
@@ -196,7 +196,7 @@ static class HighScoreController
 
                 UtilityFunctions.DrawBackground();
                 DrawHighScores();
-                SwinGame.DrawText("Name: ", Color.White, GameResources.GameFont("Geolight"), SCORES_LEFT, ENTRY_TOP);
+				SwinGame.DrawText("Name: ", Color.White, GameResources.GameFont("Geolight"), SCORES_LEFT, ENTRY_TOP);
                 SwinGame.RefreshScreen();
             }
 

@@ -16,7 +16,7 @@ public static class GameResources
     private static void LoadFonts()
     {
         NewFont("TimesLarge", "times.ttf", 80);
-        NewFont("Geolight", "geolight.ttf", 14);
+        NewFont("Geolight", "geolight.ttf", 16);
         NewFont("GeolightSmall", "geolight.ttf", 8);
         NewFont("Menu", "ffaccess.ttf", 8);
     }
