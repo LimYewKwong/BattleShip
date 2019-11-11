@@ -19,6 +19,7 @@ public static class GameResources
 		NewFont("MavenPro", "mavenpro.ttf", 16, FontStyle.BoldFont);
         NewFont("GeolightSmall", "geolight.ttf", 8, FontStyle.BoldFont);
 		NewFont("Menu", "ffaccess.ttf", 8, FontStyle.ItalicFont);
+		NewFont ("Premier", "premier2019.otf", 16, FontStyle.ItalicFont);
     }
 
     /// <summary>
@@ -30,6 +31,7 @@ public static class GameResources
         NewImage("Menu", "main_page.jpg");
         NewImage("Discovery", "discover.jpg");
         NewImage("Deploy", "deploy.jpg");
+		NewImage ("Scoreboard", "scoreboard.jpg");
 
         //Deployment
         NewImage("LeftRightButton", "deploy_dir_button_horiz.png");

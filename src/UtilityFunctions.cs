@@ -251,8 +251,10 @@ static class UtilityFunctions
 				break;
             case GameState.ViewingGameMenu:
             case GameState.AlteringSettings:
+				break;
             case GameState.ViewingHighScores:
-			SwinGame.FillRectangle (Color.Goldenrod, 450, 25, 200, 400);
+			SwinGame.DrawBitmap (GameResources.GameImage ("Scoreboard"), 450, 25);
+
                 break;
             case GameState.Discovering:
             case GameState.EndingGame:
