@@ -15,10 +15,10 @@ public static class GameResources
     /// </summary>
     private static void LoadFonts()
     {
-        NewFont("TimesLarge", "times.ttf", 80);
-        NewFont("Geolight", "geolight.ttf", 16);
-        NewFont("GeolightSmall", "geolight.ttf", 8);
-        NewFont("Menu", "ffaccess.ttf", 8);
+		NewFont("TimesLarge", "times.ttf", 80, FontStyle.ItalicFont);
+		NewFont("MavenPro", "mavenpro.ttf", 16, FontStyle.BoldFont);
+        NewFont("GeolightSmall", "geolight.ttf", 8, FontStyle.BoldFont);
+		NewFont("Menu", "ffaccess.ttf", 8, FontStyle.ItalicFont);
     }
 
     /// <summary>
@@ -180,7 +180,7 @@ public static class GameResources
         SwinGame.ProcessEvents();
 
         _Animation = SwinGame.LoadBitmap(SwinGame.PathToResource("SwinGameAni.jpg", ResourceKind.BitmapResource));
-        _LoadingFont = SwinGame.LoadFont(SwinGame.PathToResource("times.ttf", ResourceKind.FontResource), 12);
+		_LoadingFont = SwinGame.LoadFont(SwinGame.PathToResource("times.ttf", ResourceKind.FontResource), 12);
         _StartSound = Audio.LoadSoundEffect(SwinGame.PathToResource("SwinGameStart.ogg", ResourceKind.SoundResource));
 
         _LoaderFull = SwinGame.LoadBitmap(SwinGame.PathToResource("loader_full.png", ResourceKind.BitmapResource));
@@ -271,9 +271,9 @@ public static class GameResources
     /// <param name="fontName"></param>
     /// <param name="filename"></param>
     /// <param name="size"></param>
-    private static void NewFont(string fontName, string filename, int size)
+	private static void NewFont(string fontName, string filename, int size, FontStyle style)
     {
-        _Fonts.Add(fontName, SwinGame.LoadFont(SwinGame.PathToResource(filename, ResourceKind.FontResource), size));
+		_Fonts.Add(fontName, SwinGame.LoadFont(SwinGame.PathToResource(filename, ResourceKind.FontResource), size));
     }
 
     /// <summary>

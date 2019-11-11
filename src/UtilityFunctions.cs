@@ -235,7 +235,7 @@ static class UtilityFunctions
     /// </summary>
     public static void DrawMessage()
     {
-        SwinGame.DrawText(Message, MESSAGE_COLOR, GameResources.GameFont("Geolight"), FIELD_LEFT, MESSAGE_TOP);
+        SwinGame.DrawText(Message, MESSAGE_COLOR, GameResources.GameFont("MavenPro"), FIELD_LEFT, MESSAGE_TOP);
     }
 
     /// <summary>
