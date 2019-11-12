@@ -4,18 +4,18 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\HighScoreController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\GameLogic.cs">
     <Files>
-      <File FileName="src\EndingGameController.cs" Line="26" Column="115" />
-      <File FileName="src\HighScoreController.cs" Line="1" Column="1" />
-      <File FileName="src\GameResources.cs" Line="33" Column="42" />
-      <File FileName="src\UtilityFunctions.cs" Line="257" Column="4" />
-      <File FileName="src\DeploymentController.cs" Line="185" Column="71" />
-      <File FileName="src\DiscoveryController.cs" Line="1" Column="1" />
-      <File FileName="src\GameController.cs" Line="4" Column="28" />
-      <File FileName="src\GameState.cs" Line="1" Column="1" />
-      <File FileName="src\MenuController.cs" Line="1" Column="1" />
-      <File FileName="src\GameLogic.cs" Line="17" Column="15" />
+      <File FileName="src\EndingGameController.cs" Line="16" Column="18" />
+      <File FileName="src\HighScoreController.cs" Line="4" Column="28" />
+      <File FileName="src\GameResources.cs" Line="28" Column="34" />
+      <File FileName="src\UtilityFunctions.cs" Line="272" Column="79" />
+      <File FileName="src\DeploymentController.cs" Line="190" Column="40" />
+      <File FileName="src\DiscoveryController.cs" Line="7" Column="1" />
+      <File FileName="src\GameController.cs" Line="18" Column="2" />
+      <File FileName="src\GameState.cs" Line="18" Column="2" />
+      <File FileName="src\MenuController.cs" Line="18" Column="41" />
+      <File FileName="src\GameLogic.cs" Line="14" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.BattleShips PreferredExecutionTarget="MonoDevelop.Default" />

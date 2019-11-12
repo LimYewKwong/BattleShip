@@ -269,7 +269,7 @@ static class UtilityFunctions
                 break;
         }
 
-        SwinGame.DrawFramerate(675, 585, GameResources.GameFont("GeolightSmall"));
+        SwinGame.DrawFramerate(675, 585, GameResources.GameFont("MavenProSmall"));
     }
 
     public static void AddExplosion(int row, int col)

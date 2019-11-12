@@ -17,9 +17,9 @@ public static class GameResources
     {
 		NewFont("TimesLarge", "times.ttf", 80, FontStyle.ItalicFont);
 		NewFont("MavenPro", "mavenpro.ttf", 16, FontStyle.BoldFont);
-        NewFont("GeolightSmall", "geolight.ttf", 8, FontStyle.BoldFont);
+        NewFont("MavenProSmall", "mavenpro.ttf", 8, FontStyle.BoldFont);
 		NewFont("Menu", "ffaccess.ttf", 8, FontStyle.ItalicFont);
-		NewFont ("Premier", "premier2019.otf", 16, FontStyle.ItalicFont);
+		NewFont ("Scoreboard", "scoreboard.ttf", 20, FontStyle.ItalicFont);
     }
 
     /// <summary>
