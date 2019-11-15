@@ -285,8 +285,10 @@ static class MenuController
                 GameController.AddNewState(GameState.ViewingHighScores);
                 break;
 			case MAIN_MENU_MUSIC_ON_BUTTON:
+				SwinGame.PlayMusic(GameResources.GameMusic ("Background"));
 				break;
 			case MAIN_MENU_MUSIC_OFF_BUTTON:
+				SwinGame.StopMusic ();
 				break;
             case MAIN_MENU_QUIT_BUTTON:
                 GameController.EndCurrentState();
