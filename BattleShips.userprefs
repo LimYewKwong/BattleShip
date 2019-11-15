@@ -4,19 +4,19 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\MenuController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\GameResources.cs">
     <Files>
       <File FileName="src\EndingGameController.cs" Line="21" Column="115" />
       <File FileName="src\HighScoreController.cs" Line="160" Column="10" />
       <File FileName="src\UtilityFunctions.cs" Line="252" Column="43" />
       <File FileName="src\DeploymentController.cs" Line="157" Column="66" />
       <File FileName="src\DiscoveryController.cs" Line="80" Column="113" />
-      <File FileName="src\GameResources.cs" Line="315" Column="37" />
+      <File FileName="src\GameResources.cs" Line="330" Column="18" />
       <File FileName="src\GameState.cs" Line="32" Column="22" />
       <File FileName="src\GameController.cs" Line="245" Column="12" />
-      <File FileName="src\MenuController.cs" Line="288" Column="15" />
+      <File FileName="src\MenuController.cs" Line="288" Column="1" />
       <File FileName="src\GameLogic.cs" Line="16" Column="3" />
-      <File FileName="..\Downloads\Battleships Tutorial\Battleships\Battleships\GameResources.vb" Line="1" Column="1" />
+      <File FileName="src\Model\Ship.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.BattleShips PreferredExecutionTarget="MonoDevelop.Default" />
