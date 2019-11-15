@@ -9,12 +9,17 @@ using System.Diagnostics;
 /// </summary>
 public class Player : IEnumerable<Ship>
 {
-
+    /// <summary>
+    /// Random player
+    /// </summary>
 	protected static Random _Random = new Random();
 	private Dictionary<ShipName, Ship> _Ships = new Dictionary<ShipName, Ship>();
 	private SeaGrid _playerGrid;
 	private ISeaGrid _enemyGrid;
 
+    /// <summary>
+    /// Battle Ships game
+    /// </summary>
 	protected BattleShipsGame _game;
 	private int _shots;
 	private int _hits;
@@ -38,6 +43,10 @@ public class Player : IEnumerable<Ship>
 		set { _enemyGrid = value; }
 	}
 
+    /// <summary>
+    /// Player Controller
+    /// </summary>
+    /// <param name="controller"></param>
 	public Player(BattleShipsGame controller)
 	{
 		_game = controller;
@@ -75,8 +84,10 @@ public class Player : IEnumerable<Ship>
 		get { return _playerGrid.AllDeployed; }
 	}
 
+    /// <summary>
+    /// Check if all ships are destroyed... -1 for the none ship
+    /// </summary>
 	public bool IsDestroyed {
-//Check if all ships are destroyed... -1 for the none ship
 		get { return _playerGrid.ShipsKilled == Enum.GetValues(typeof(ShipName)).Length - 1; }
 	}
 
@@ -103,6 +114,9 @@ public class Player : IEnumerable<Ship>
 		get { return _shots; }
 	}
 
+    /// <summary>
+    /// The number of hits the player has mde
+    /// </summary>
 	public int Hits {
 		get { return _hits; }
 	}
@@ -116,6 +130,9 @@ public class Player : IEnumerable<Ship>
 		get { return _misses; }
 	}
 
+    /// <summary>
+    /// Total Score of the ships destroyed
+    /// </summary>
 	public int Score {
 		get {
 			if (IsDestroyed) {
@@ -194,6 +211,9 @@ public class Player : IEnumerable<Ship>
 		return result;
 	}
 
+    /// <summary>
+    /// Randomly change the ship deployment
+    /// </summary>
 	public virtual void RandomizeDeployment()
 	{
 		bool placementSuccessful = false;

@@ -78,7 +78,10 @@ public abstract class AIPlayer : Player
 		}
 	}
 
-
+    /// <summary>
+    /// AI Player
+    /// </summary>
+    /// <param name="game"></param>
 	public AIPlayer(BattleShipsGame game) : base(game)
 	{
 	}

@@ -57,9 +57,12 @@ public class AttackResult
 	}
 
 	/// <summary>
-	/// Set the _Value to the PossibleAttack value
+    /// Set the _Value to the PossibleAttack value
 	/// </summary>
-	/// <param name="value">either hit, miss, destroyed, shotalready</param>
+    /// <param name="value">either hit, miss, destroyed, shotalready</param>
+	/// <param name="text"></param>
+	/// <param name="row"></param>
+	/// <param name="column"></param>
 	public AttackResult(ResultOfAttack value, string text, int row, int column)
 	{
 		_Value = value;
@@ -70,10 +73,13 @@ public class AttackResult
 	}
 
 	/// <summary>
-	/// Set the _Value to the PossibleAttack value, and the _Ship to the ship
+    /// Set the _Value to the PossibleAttack value, and the _Ship to the ship
 	/// </summary>
-	/// <param name="value">either hit, miss, destroyed, shotalready</param>
-	/// <param name="ship">the ship information</param>
+    /// <param name="value">either hit, miss, destroyed, shotalready</param>
+    /// <param name="ship">the ship information</param>
+	/// <param name="text"></param>
+	/// <param name="row"></param>
+	/// <param name="column"></param>
 	public AttackResult(ResultOfAttack value, Ship ship, string text, int row, int column) : this(value, text, row, column)
 	{
 		_Ship = ship;

@@ -14,17 +14,19 @@ using SwinGameSDK;
 static class MenuController
 {
 
-    /// <summary>
-    /// The menu structure for the game.
-    /// </summary>
-    /// <remarks>
-    /// These are the text captions for the menu items.
-    /// </remarks>
-    private static readonly string[][] _menuStructure = {
-        new string[] {
-            "PLAY",
-            "DIFFICULTY",
-            "SCORES",
+	/// <summary>
+	/// The menu structure for the game.
+	/// </summary>
+	/// <remarks>
+	/// These are the text captions for the menu items.
+	/// </remarks>
+	private static readonly string [] [] _menuStructure = {
+		new string[] {
+			"PLAY",
+			"DIFFICULTY",
+			"SCORES",
+			"MUSIC ON",
+			"MUSIC OFF",
             "QUIT"
         },
         new string[] {
@@ -54,8 +56,10 @@ static class MenuController
     private const int MAIN_MENU_PLAY_BUTTON = 0;
     private const int MAIN_MENU_SETUP_BUTTON = 1;
     private const int MAIN_MENU_TOP_SCORES_BUTTON = 2;
+	private const int MAIN_MENU_MUSIC_ON_BUTTON = 3;
+	private const int MAIN_MENU_MUSIC_OFF_BUTTON = 4;
 
-    private const int MAIN_MENU_QUIT_BUTTON = 3;
+    private const int MAIN_MENU_QUIT_BUTTON = 5;
     private const int SETUP_MENU_EASY_BUTTON = 0;
     private const int SETUP_MENU_MEDIUM_BUTTON = 1;
     private const int SETUP_MENU_HARD_BUTTON = 2;
@@ -276,10 +280,14 @@ static class MenuController
                 break;
             case MAIN_MENU_SETUP_BUTTON:
                 GameController.AddNewState(GameState.AlteringSettings);
-                break;
+				break;
             case MAIN_MENU_TOP_SCORES_BUTTON:
                 GameController.AddNewState(GameState.ViewingHighScores);
                 break;
+			case MAIN_MENU_MUSIC_ON_BUTTON:
+				break;
+			case MAIN_MENU_MUSIC_OFF_BUTTON:
+				break;
             case MAIN_MENU_QUIT_BUTTON:
                 GameController.EndCurrentState();
                 break;

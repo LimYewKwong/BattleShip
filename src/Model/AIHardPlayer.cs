@@ -91,6 +91,11 @@ public class AIHardPlayer : AIPlayer
 	private List<Target> _LastHit = new List<Target>();
 
 	private Target _CurrentTarget;
+
+    /// <summary>
+    /// AI Hard Player
+    /// </summary>
+    /// <param name="game"></param>
 	public AIHardPlayer(BattleShipsGame game) : base(game)
 	{
 	}

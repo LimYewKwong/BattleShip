@@ -10,6 +10,36 @@
             </summary>
             <remarks></remarks>
         </member>
+        <member name="F:ShipName.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:ShipName.Tug">
+            <summary>
+            Tugs
+            </summary>
+        </member>
+        <member name="F:ShipName.Submarine">
+            <summary>
+            Submarine
+            </summary>
+        </member>
+        <member name="F:ShipName.Destroyer">
+            <summary>
+            Destroyer
+            </summary>
+        </member>
+        <member name="F:ShipName.Battleship">
+            <summary>
+            Battleship
+            </summary>
+        </member>
+        <member name="F:ShipName.AircraftCarrier">
+            <summary>
+            Aircraft Carrier
+            </summary>
+        </member>
         <member name="T:SeaGridAdapter">
             <summary>
             The SeaGridAdapter allows for the change in a sea grid view. Whenever a ship is
@@ -30,6 +60,16 @@
             <param name="col">the column of the tile</param>
             <returns>the result of the attack</returns>
         </member>
+        <member name="P:ISeaGrid.Width">
+            <summary>
+            Get width
+            </summary>
+        </member>
+        <member name="P:ISeaGrid.Height">
+            <summary>
+            Get height
+            </summary>
+        </member>
         <member name="E:ISeaGrid.Changed">
             <summary>
             Indicates that the grid has changed.
@@ -40,7 +80,7 @@
             Provides access to the given row/column
             </summary>
             <param name="row">the row to access</param>
-            <param name="column">the column to access</param>
+            <param name="col">the column to access</param>
             <value>what the player can see at that location</value>
             <returns>what the player can see at that location</returns>
         </member>
@@ -241,6 +281,22 @@
             all ships are deployed and if all ships are detroyed. A Player can also attach.
             </summary>
         </member>
+        <member name="F:Player._Random">
+            <summary>
+            Random player
+            </summary>
+        </member>
+        <member name="F:Player._game">
+            <summary>
+            Battle Ships game
+            </summary>
+        </member>
+        <member name="M:Player.#ctor(BattleShipsGame)">
+            <summary>
+            Player Controller
+            </summary>
+            <param name="controller"></param>
+        </member>
         <member name="M:Player.Ship(ShipName)">
             <summary>
             Returns the Player's ship with the given name.
@@ -277,6 +333,11 @@
             <param name="col">the column to attack</param>
             <returns>the result of the attack</returns>
         </member>
+        <member name="M:Player.RandomizeDeployment">
+            <summary>
+            Randomly change the ship deployment
+            </summary>
+        </member>
         <member name="P:Player.Game">
             <summary>
             Returns the game that the player is part of.
@@ -305,6 +366,11 @@
             ReadyToDeploy returns true if all ships are deployed
             </summary>
         </member>
+        <member name="P:Player.IsDestroyed">
+            <summary>
+            Check if all ships are destroyed... -1 for the none ship
+            </summary>
+        </member>
         <member name="P:Player.Shots">
             <summary>
             The number of shots the player has made
@@ -312,12 +378,28 @@
             <value>shots taken</value>
             <returns>teh number of shots taken</returns>
         </member>
+        <member name="P:Player.Hits">
+            <summary>
+            The number of hits the player has mde
+            </summary>
+        </member>
         <member name="P:Player.Missed">
             <summary>
             Total number of shots that missed
             </summary>
             <value>miss count</value>
             <returns>the number of shots that have missed ships</returns>
+        </member>
+        <member name="P:Player.Score">
+            <summary>
+            Total Score of the ships destroyed
+            </summary>
+        </member>
+        <member name="M:AIPlayer.#ctor(BattleShipsGame)">
+            <summary>
+            AI Player
+            </summary>
+            <param name="game"></param>
         </member>
         <member name="M:AIPlayer.GenerateCoords(System.Int32@,System.Int32@)">
             <summary>
@@ -563,6 +645,7 @@
             <param name="fontName"></param>
             <param name="filename"></param>
             <param name="size"></param>
+            <param name="style"></param>
         </member>
         <member name="M:GameResources.NewImage(System.String,System.String)">
             <summary>
@@ -907,6 +990,12 @@
             if it has found a ship
             </summary>
         </member>
+        <member name="M:AIMediumPlayer.#ctor(BattleShipsGame)">
+            <summary>
+            AI Medium Player
+            </summary>
+            <param name="controller"></param>
+        </member>
         <member name="M:AIMediumPlayer.GenerateCoords(System.Int32@,System.Int32@)">
             <summary>
             GenerateCoordinates should generate random shooting coordinates
@@ -1067,6 +1156,12 @@
             Deployment information is supplied to allow ships to be drawn.
             </remarks>
         </member>
+        <member name="M:Ship.#ctor(ShipName)">
+            <summary>
+            Ship
+            </summary>
+            <param name="ship"></param>
+        </member>
         <member name="M:Ship.AddTile(Tile)">
             <summary>
             Add tile adds the ship tile
@@ -1076,6 +1171,11 @@
         <member name="M:Ship.Remove">
             <summary>
             Remove clears the tile back to a sea tile
+            </summary>
+        </member>
+        <member name="M:Ship.Hit">
+            <summary>
+            Hits Taken
             </summary>
         </member>
         <member name="M:Ship.Deployed(Direction,System.Int32,System.Int32)">
@@ -1115,10 +1215,25 @@
             <value>The topmost location of the ship</value>
             <returns>the row of the ship</returns>
         </member>
+        <member name="P:Ship.Column">
+            <summary>
+            Column
+            </summary>
+        </member>
+        <member name="P:Ship.Direction">
+            <summary>
+            Direction
+            </summary>
+        </member>
         <member name="P:Ship.IsDeployed">
             <summary>
             IsDeployed returns if the ships is deployed, if its deplyed it has more than
             0 tiles
+            </summary>
+        </member>
+        <member name="P:Ship.IsDestroyed">
+            <summary>
+            IsDestroyed returns if the ships is destroyed
             </summary>
         </member>
         <member name="T:DiscoveryController">
@@ -1275,6 +1390,9 @@
             Set the _Value to the PossibleAttack value
             </summary>
             <param name="value">either hit, miss, destroyed, shotalready</param>
+            <param name="text"></param>
+            <param name="row"></param>
+            <param name="column"></param>
         </member>
         <member name="M:AttackResult.#ctor(ResultOfAttack,Ship,System.String,System.Int32,System.Int32)">
             <summary>
@@ -1282,6 +1400,9 @@
             </summary>
             <param name="value">either hit, miss, destroyed, shotalready</param>
             <param name="ship">the ship information</param>
+            <param name="text"></param>
+            <param name="row"></param>
+            <param name="column"></param>
         </member>
         <member name="M:AttackResult.ToString">
             <summary>
@@ -1329,6 +1450,12 @@
             the AI knows it has hit multiple ships. Then will try to destoy all around tiles
             that have been hit.
             </summary>
+        </member>
+        <member name="M:AIEasyPlayer.#ctor(BattleShipsGame)">
+            <summary>
+            AI Easy Player
+            </summary>
+            <param name="game"></param>
         </member>
         <member name="M:AIEasyPlayer.GenerateCoords(System.Int32@,System.Int32@)">
             <summary>
@@ -1466,6 +1593,12 @@
             the AI knows it has hit multiple ships. Then will try to destoy all around tiles
             that have been hit.
             </summary>
+        </member>
+        <member name="M:AIHardPlayer.#ctor(BattleShipsGame)">
+            <summary>
+            AI Hard Player
+            </summary>
+            <param name="game"></param>
         </member>
         <member name="M:AIHardPlayer.GenerateCoords(System.Int32@,System.Int32@)">
             <summary>

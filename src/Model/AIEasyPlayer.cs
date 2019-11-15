@@ -85,6 +85,10 @@ public class AIEasyPlayer : AIPlayer
     private Stack<Target> _Targets = new Stack<Target>();
     private List<Target> _LastHit = new List<Target>();
 
+    /// <summary>
+    /// AI Easy Player
+    /// </summary>
+    /// <param name="game"></param>
     public AIEasyPlayer(BattleShipsGame game)
         : base(game)
     {

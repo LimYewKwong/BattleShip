@@ -29,6 +29,7 @@ public static class GameResources
     {
         //Backgrounds
         NewImage("Menu", "main_page.jpg");
+
         NewImage("Discovery", "discover.jpg");
         NewImage("Deploy", "deploy.jpg");
 		NewImage ("Scoreboard", "scoreboard.jpg");
@@ -70,7 +71,7 @@ public static class GameResources
     /// <summary>
     /// Setup the music to be load
     /// </summary>
-    private static void LoadMusic()
+	private static void LoadMusic()
     {
         NewMusic("Background", "alienspaceship.wav");
     }
@@ -267,12 +268,13 @@ public static class GameResources
         SwinGame.ChangeScreenSize(width, height);
     }
 
-    /// <summary>
-    /// Create font and add to _Fonts
-    /// </summary>
-    /// <param name="fontName"></param>
-    /// <param name="filename"></param>
-    /// <param name="size"></param>
+   /// <summary>
+   /// Create font and add to _Fonts
+   /// </summary>
+   /// <param name="fontName"></param>
+   /// <param name="filename"></param>
+   /// <param name="size"></param>
+   /// <param name="style"></param>
 	private static void NewFont(string fontName, string filename, int size, FontStyle style)
     {
 		_Fonts.Add(fontName, SwinGame.LoadFont(SwinGame.PathToResource(filename, ResourceKind.FontResource), size));
@@ -323,6 +325,7 @@ public static class GameResources
     {
         _Music.Add(musicName, Audio.LoadMusic(SwinGame.PathToResource(filename, ResourceKind.SoundResource)));
     }
+
 
     /// <summary>
     /// Empty content in _Fonts

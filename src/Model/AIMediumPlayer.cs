@@ -24,6 +24,10 @@ public class AIMediumPlayer : AIPlayer
 	private AIStates _CurrentState = AIStates.Searching;
 
 	private Stack<Location> _Targets = new Stack<Location>();
+    /// <summary>
+    /// AI Medium Player
+    /// </summary>
+    /// <param name="controller"></param>
 	public AIMediumPlayer(BattleShipsGame controller) : base(controller)
 	{
 	}
