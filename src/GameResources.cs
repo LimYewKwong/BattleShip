@@ -194,8 +194,8 @@ public static class GameResources
     /// <param name="number"></param>
     private static void ShowMessage(string message, int number)
     {
-        const int TX = 310;
-        const int TY = 493;
+        const int TX = 300;
+        const int TY = 485;
         const int TW = 200;
         const int TH = 25;
         const int STEPS = 5;
