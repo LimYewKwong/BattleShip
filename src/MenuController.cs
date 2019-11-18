@@ -27,6 +27,7 @@ static class MenuController
 			"SCORES",
 			"MUSIC ON",
 			"MUSIC OFF",
+			"FULLSCREEN",
             "QUIT"
         },
         new string[] {
@@ -47,28 +48,29 @@ static class MenuController
     private const int BUTTON_WIDTH = 75;
     private const int BUTTON_HEIGHT = 15;
     private const int BUTTON_SEP = BUTTON_WIDTH + MENU_GAP;
-
     private const int TEXT_OFFSET = 0;
+
     private const int MAIN_MENU = 0;
     private const int GAME_MENU = 1;
-
     private const int SETUP_MENU = 2;
+
     private const int MAIN_MENU_PLAY_BUTTON = 0;
     private const int MAIN_MENU_SETUP_BUTTON = 1;
     private const int MAIN_MENU_TOP_SCORES_BUTTON = 2;
 	private const int MAIN_MENU_MUSIC_ON_BUTTON = 3;
 	private const int MAIN_MENU_MUSIC_OFF_BUTTON = 4;
+	private const int MAIN_MENU_FULLSCREEN_BUTTON = 5;
+    private const int MAIN_MENU_QUIT_BUTTON = 7;
 
-    private const int MAIN_MENU_QUIT_BUTTON = 5;
     private const int SETUP_MENU_EASY_BUTTON = 0;
     private const int SETUP_MENU_MEDIUM_BUTTON = 1;
     private const int SETUP_MENU_HARD_BUTTON = 2;
-
     private const int SETUP_MENU_EXIT_BUTTON = 3;
+
     private const int GAME_MENU_RETURN_BUTTON = 0;
     private const int GAME_MENU_SURRENDER_BUTTON = 1;
-
     private const int GAME_MENU_QUIT_BUTTON = 2;
+
     private static readonly Color MENU_COLOR = SwinGame.RGBAColor(2, 167, 252, 255);
 
     private static readonly Color HIGHLIGHT_COLOR = SwinGame.RGBAColor(1, 57, 86, 255);
@@ -289,6 +291,9 @@ static class MenuController
 				break;
 			case MAIN_MENU_MUSIC_OFF_BUTTON:
 				SwinGame.StopMusic ();
+				break;
+			case MAIN_MENU_FULLSCREEN_BUTTON:
+				SwinGame.ToggleFullScreen ();
 				break;
             case MAIN_MENU_QUIT_BUTTON:
                 GameController.EndCurrentState();
