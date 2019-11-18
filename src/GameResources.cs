@@ -72,7 +72,7 @@ public static class GameResources
     /// </summary>
     private static void LoadMusic()
     {
-        NewMusic("Background", "alienspaceship.wav");
+        NewMusic("Background", "netherplace.mp3");
     }
 
     /// <summary>
