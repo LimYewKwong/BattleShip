@@ -43,10 +43,10 @@ static class MenuController
 
     };
     private const int MENU_TOP = 575;
-    private const int MENU_LEFT = 30;
+    private const int MENU_LEFT = 35;
     private const int MENU_GAP = 0;
-    private const int BUTTON_WIDTH = 75;
-    private const int BUTTON_HEIGHT = 15;
+    private const int BUTTON_WIDTH = 80;
+    private const int BUTTON_HEIGHT = 20;
     private const int BUTTON_SEP = BUTTON_WIDTH + MENU_GAP;
     private const int TEXT_OFFSET = 0;
 
@@ -71,9 +71,9 @@ static class MenuController
     private const int GAME_MENU_SURRENDER_BUTTON = 1;
     private const int GAME_MENU_QUIT_BUTTON = 2;
 
-    private static readonly Color MENU_COLOR = SwinGame.RGBAColor(2, 167, 252, 255);
+    private static readonly Color MENU_COLOR = SwinGame.RGBAColor(0, 237, 190, 255);
 
-    private static readonly Color HIGHLIGHT_COLOR = SwinGame.RGBAColor(1, 57, 86, 255);
+    private static readonly Color HIGHLIGHT_COLOR = SwinGame.RGBAColor(0, 115, 92, 255);
     /// <summary>
     /// Handles the processing of user input when the main menu is showing
     /// </summary>
