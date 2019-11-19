@@ -249,12 +249,15 @@ static class UtilityFunctions
             case GameState.ViewingMainMenu:
 				SwinGame.DrawBitmap (GameResources.GameImage ("Menu"), 0, 0);
 				break;
+			case GameState.ViewingInstruction:
+				SwinGame.DrawBitmap (GameResources.GameImage ("Instruction"), 0, 0);
+				Instruction.DrawInstruction();
+				break;
             case GameState.ViewingGameMenu:
             case GameState.AlteringSettings:
 				break;
             case GameState.ViewingHighScores:
-			SwinGame.DrawBitmap (GameResources.GameImage ("Scoreboard"), 450, 25);
-
+				SwinGame.DrawBitmap (GameResources.GameImage ("Scoreboard"), 450, 25);
                 break;
             case GameState.Discovering:
             case GameState.EndingGame:
