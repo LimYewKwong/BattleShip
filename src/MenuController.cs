@@ -23,6 +23,7 @@ static class MenuController
 	private static readonly string [] [] _menuStructure = {
 		new string[] {
 			"PLAY",
+			"INSTRUCTION",
 			"DIFFICULTY",
 			"SCORES",
 			"MUSIC ON",
@@ -45,7 +46,7 @@ static class MenuController
     private const int MENU_TOP = 575;
     private const int MENU_LEFT = 35;
     private const int MENU_GAP = 0;
-    private const int BUTTON_WIDTH = 80;
+    private const int BUTTON_WIDTH = 90;
     private const int BUTTON_HEIGHT = 20;
     private const int BUTTON_SEP = BUTTON_WIDTH + MENU_GAP;
     private const int TEXT_OFFSET = 0;
@@ -55,11 +56,12 @@ static class MenuController
     private const int SETUP_MENU = 2;
 
     private const int MAIN_MENU_PLAY_BUTTON = 0;
-    private const int MAIN_MENU_SETUP_BUTTON = 1;
-    private const int MAIN_MENU_TOP_SCORES_BUTTON = 2;
-	private const int MAIN_MENU_MUSIC_ON_BUTTON = 3;
-	private const int MAIN_MENU_MUSIC_OFF_BUTTON = 4;
-	private const int MAIN_MENU_FULLSCREEN_BUTTON = 5;
+	private const int MAIN_MENU_INSTRUCTION_BUTTON = 1;
+	private const int MAIN_MENU_SETUP_BUTTON = 2;
+    private const int MAIN_MENU_TOP_SCORES_BUTTON = 3;
+	private const int MAIN_MENU_MUSIC_ON_BUTTON = 4;
+	private const int MAIN_MENU_MUSIC_OFF_BUTTON = 5;
+	private const int MAIN_MENU_FULLSCREEN_BUTTON = 6;
     private const int MAIN_MENU_QUIT_BUTTON = 7;
 
     private const int SETUP_MENU_EASY_BUTTON = 0;
@@ -280,6 +282,9 @@ static class MenuController
             case MAIN_MENU_PLAY_BUTTON:
                 GameController.StartGame();
                 break;
+			case MAIN_MENU_INSTRUCTION_BUTTON:
+				GameController.AddNewState (GameState.ViewingInstruction);
+				break;
             case MAIN_MENU_SETUP_BUTTON:
                 GameController.AddNewState(GameState.AlteringSettings);
 				break;

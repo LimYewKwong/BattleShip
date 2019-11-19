@@ -294,6 +294,9 @@ public static class GameController
             case GameState.ViewingMainMenu:
                 MenuController.HandleMainMenuInput();
                 break;
+			case GameState.ViewingInstruction:
+				Instruction.HandleInstruction ();
+				break;
             case GameState.ViewingGameMenu:
                 MenuController.HandleGameMenuInput();
                 break;
@@ -332,6 +335,9 @@ public static class GameController
             case GameState.ViewingMainMenu:
                 MenuController.DrawMainMenu();
                 break;
+			case GameState.ViewingInstruction:
+				Instruction.DrawInstruction();
+				break;
             case GameState.ViewingGameMenu:
                 MenuController.DrawGameMenu();
                 break;
