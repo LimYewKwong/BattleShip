@@ -109,7 +109,6 @@ C:\Users\Asus\BattleShip\bin\Debug\Resources\images\Swinburne.jpg
 C:\Users\Asus\BattleShip\bin\Debug\Resources\images\SwinGameAni.jpg
 C:\Users\Asus\BattleShip\bin\Debug\Resources\images\SwinGameAni.png
 C:\Users\Asus\BattleShip\bin\Debug\Resources\panels\FileDialog.txt
-C:\Users\Asus\BattleShip\bin\Debug\Resources\sounds\alienspaceship.wav
 C:\Users\Asus\BattleShip\bin\Debug\Resources\sounds\error.wav
 C:\Users\Asus\BattleShip\bin\Debug\Resources\sounds\hit.wav
 C:\Users\Asus\BattleShip\bin\Debug\Resources\sounds\horrordrone.mp3
@@ -192,3 +191,6 @@ E:\Year 2 SEM 2\Development Project\Week 10\BattleShip\bin\Debug\BattleShips.exe
 E:\Year 2 SEM 2\Development Project\Week 10\BattleShip\bin\Debug\BattleShips.pdb
 E:\Year 2 SEM 2\Development Project\Week 10\BattleShip\bin\Debug\SwinGame.dll
 E:\Year 2 SEM 2\Development Project\Week 10\BattleShip\obj\x86\Debug-Mac\BattleShips.csprojResolveAssemblyReference.cache
+C:\Users\Asus\BattleShip\bin\Debug\Resources\fonts\cour.ttf
+C:\Users\Asus\BattleShip\bin\Debug\Resources\images\inst.jpg
+C:\Users\Asus\BattleShip\bin\Debug\Resources\sounds\netherplace.mp3
