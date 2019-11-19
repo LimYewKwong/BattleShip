@@ -19,7 +19,8 @@ public static class GameResources
 		NewFont("MavenPro", "mavenpro.ttf", 16, FontStyle.BoldFont);
         NewFont("MavenProSmall", "mavenpro.ttf", 8, FontStyle.BoldFont);
 		NewFont("Menu", "ffaccess.ttf", 8, FontStyle.ItalicFont);
-		NewFont ("Scoreboard", "scoreboard.ttf", 20, FontStyle.ItalicFont);
+		NewFont("Scoreboard", "scoreboard.ttf", 20, FontStyle.ItalicFont);
+		NewFont("Courier", "cour.ttf", 14, FontStyle.BoldFont);
     }
 
     /// <summary>
@@ -32,6 +33,9 @@ public static class GameResources
         NewImage("Discovery", "discover.jpg");
         NewImage("Deploy", "deploy.jpg");
 		NewImage ("Scoreboard", "scoreboard.jpg");
+
+		//Instruction
+		NewImage ("Instruction", "inst.jpg");
 
         //Deployment
         NewImage("LeftRightButton", "deploy_dir_button_horiz.png");
