@@ -32,6 +32,10 @@ static class DeploymentController
 
     private const int DIR_BUTTONS_WIDTH = 47;
 
+	//BACK BUTTON
+	private const int BACK_BUTTON_HEIGHT = 20;
+	private const int BACK_BUTTON_LEFT = 30;
+
     private const int TEXT_OFFSET = 5;
     private static Direction _currentDirection = Direction.UpDown;
 
@@ -93,9 +97,11 @@ static class DeploymentController
             else if (UtilityFunctions.IsMouseInRectangle(RANDOM_BUTTON_LEFT, TOP_BUTTONS_TOP, RANDOM_BUTTON_WIDTH, TOP_BUTTONS_HEIGHT))
             {
                 GameController.HumanPlayer.RandomizeDeployment();
-            }
-        }
-    }
+          } else if (UtilityFunctions.IsMouseInRectangle (BACK_BUTTON_LEFT, BACK_BUTTON_HEIGHT, 87, 36)) {
+				GameController.EndCurrentState ();
+			}
+		}
+	}
 
     /// <summary>
     /// The user has clicked somewhere on the screen, check if its is a deployment and deploy
@@ -186,6 +192,7 @@ static class DeploymentController
         }
 
         SwinGame.DrawBitmap(GameResources.GameImage("RandomButton"), RANDOM_BUTTON_LEFT, TOP_BUTTONS_TOP);
+		SwinGame.DrawBitmap (GameResources.GameImage ("BackButton"), BACK_BUTTON_LEFT, BACK_BUTTON_HEIGHT);
 
         UtilityFunctions.DrawMessage();
     }

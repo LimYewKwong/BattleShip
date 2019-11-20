@@ -624,7 +624,7 @@
             Show the loading screen
             </summary>
         </member>
-        <member name="M:GameResources.ShowMessage(System.Int32)">
+        <member name="M:GameResources.ShowMessage(System.String,System.Int32)">
             <summary>
             Show message of the program
             </summary>
