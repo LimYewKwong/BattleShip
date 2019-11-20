@@ -43,11 +43,11 @@ static class MenuController
         }
 
     };
-    private const int MENU_TOP = 575;
+    private const int MENU_TOP = 550;
     private const int MENU_LEFT = 35;
     private const int MENU_GAP = 0;
     private const int BUTTON_WIDTH = 90;
-    private const int BUTTON_HEIGHT = 20;
+    private const int BUTTON_HEIGHT = 15;
     private const int BUTTON_SEP = BUTTON_WIDTH + MENU_GAP;
     private const int TEXT_OFFSET = 0;
 
