@@ -185,7 +185,6 @@ public static class GameResources
         SwinGame.RefreshScreen();
         SwinGame.ProcessEvents();
 
-		_LoadingFont = SwinGame.LoadFont(SwinGame.PathToResource("times.ttf", ResourceKind.FontResource), 12);
         _StartSound = Audio.LoadSoundEffect(SwinGame.PathToResource("SwinGameStart.ogg", ResourceKind.SoundResource));
 
         _LoaderFull = SwinGame.LoadBitmap(SwinGame.PathToResource("loader_full.png", ResourceKind.BitmapResource));
