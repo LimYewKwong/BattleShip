@@ -152,24 +152,24 @@ public static class GameResources
 
         ShowLoadingScreen();
 
-        ShowMessage("Loading fonts...", 0);
+        ShowMessage(0);
         LoadFonts();
         SwinGame.Delay(100);
 
-        ShowMessage("Loading images...", 1);
+        ShowMessage(1);
         LoadImages();
         SwinGame.Delay(100);
 
-        ShowMessage("Loading sounds...", 2);
+        ShowMessage(2);
         LoadSounds();
         SwinGame.Delay(100);
 
-        ShowMessage("Loading music...", 3);
+        ShowMessage(3);
         LoadMusic();
         SwinGame.Delay(100);
 
         SwinGame.Delay(100);
-        ShowMessage("Game loaded...", 5);
+        ShowMessage(5);
         SwinGame.Delay(100);
         EndLoadingScreen(width, height);
     }
@@ -196,23 +196,17 @@ public static class GameResources
     /// </summary>
     /// <param name="message"></param>
     /// <param name="number"></param>
-    private static void ShowMessage(string message, int number)
+    private static void ShowMessage(int number)
     {
-        const int TX = 300;
-        const int TY = 485;
-        const int TW = 200;
-        const int TH = 25;
         const int STEPS = 5;
-        const int BG_X = 279;
-        const int BG_Y = 453;
+        const int BG_X = 270;
+        const int BG_Y = 500;
 
         int fullW = 0;
 
         fullW = 260 * number / STEPS;
         SwinGame.DrawBitmap(_LoaderEmpty, BG_X, BG_Y);
         SwinGame.DrawBitmapPart(_LoaderFull, 0, 0, fullW, 66, BG_X, BG_Y);
-
-        SwinGame.DrawTextLines(message, Color.White, Color.Transparent, _LoadingFont, FontAlignment.AlignCenter, TX, TY, TW, TH);
 
         SwinGame.RefreshScreen();
         SwinGame.ProcessEvents();
