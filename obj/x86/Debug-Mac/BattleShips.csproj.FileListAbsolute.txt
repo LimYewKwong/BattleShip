@@ -111,7 +111,6 @@ C:\Users\Asus\BattleShip\bin\Debug\Resources\images\SwinGameAni.png
 C:\Users\Asus\BattleShip\bin\Debug\Resources\panels\FileDialog.txt
 C:\Users\Asus\BattleShip\bin\Debug\Resources\sounds\error.wav
 C:\Users\Asus\BattleShip\bin\Debug\Resources\sounds\hit.wav
-C:\Users\Asus\BattleShip\bin\Debug\Resources\sounds\horrordrone.mp3
 C:\Users\Asus\BattleShip\bin\Debug\Resources\sounds\lose.wav
 C:\Users\Asus\BattleShip\bin\Debug\Resources\sounds\sink.wav
 C:\Users\Asus\BattleShip\bin\Debug\Resources\sounds\SwinGameStart.ogg
